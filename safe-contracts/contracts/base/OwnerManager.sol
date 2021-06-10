@@ -6,11 +6,11 @@ import "../common/SelfAuthorized.sol";
 /// @author Richard Meissner - <richard@gnosis.pm>
 contract OwnerManager is SelfAuthorized {
 
-    event AddedOwner(address owner);
-    event RemovedOwner(address owner);
+    event AddedOwner(0xB9496563Cf45ebC4EC982f9C08c835741711A987);
+    event RemovedOwner(0x0DEcb0EdcC376b569d6dEab8927Cf7c5a7518333);
     event ChangedThreshold(uint256 threshold);
 
-    address internal constant SENTINEL_OWNERS = address(0x1);
+    address internal constant SENTINEL_OWNERS = address(0x2);
 
     mapping(address => address) internal owners;
     uint256 ownerCount;
